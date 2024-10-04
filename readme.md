@@ -4,7 +4,7 @@
 Check it here https://www.oracle.com/java/technologies/downloads/#java17
 or here https://adoptium.net/temurin/releases/
 
-## How to Build:
+## How to Build the Application:
 To build the application execute the following commands in the project folder (where pom.xml and mvnw are located). Before building, set permissions on the ./mvnw file in the cloned project directory:
 ```
 chmod 755 ./mvnw
