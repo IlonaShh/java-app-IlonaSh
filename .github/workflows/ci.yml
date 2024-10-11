@@ -36,3 +36,13 @@ jobs:
       - name: Run tests
         run: ./mvnw test
 
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@v1.6
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          args: >
+            -Dsonar.projectKey=IlonaShh_java-app-IlonaSh
+            -Dsonar.organization=IlonaShh
+            -Dsonar.host.url=https://sonarcloud.io
+
