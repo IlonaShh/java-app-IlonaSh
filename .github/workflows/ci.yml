@@ -30,6 +30,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
 
+      - name: Make mvnw executable
+        run: chmod +x mvnw
+
       - name: Run SonarCloud scan
         run: ./mvnw org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.1.2184:sonar \
              -Dsonar.projectKey=IlonaShh_java-app-IlonaSh \
